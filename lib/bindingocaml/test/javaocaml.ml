@@ -1,4 +1,4 @@
-let () = Java.init [| "-Djava.class.path=../srcs/ocaml-java/srcs/java/ocaml-java.jar:../srcs/javacryptocode/jarfiles/unicrypt-2.3.jar:../srcs/javacryptocode/jarfiles/jnagmp-2.0.0.jar:../srcs/javacryptocode/jarfiles/jna-4.5.0.jar:../srcs/javacryptocode/schulze.jar:." |]
+let () = Java.init [| "-Djava.class.path=../srcs/ocaml-java/srcs/java/bin/ocaml-java.jar:../srcs/javacryptocode/jarfiles/unicrypt-2.3.jar:../srcs/javacryptocode/jarfiles/jnagmp-2.0.0.jar:../srcs/javacryptocode/jarfiles/jna-4.5.0.jar:../srcs/javacryptocode/schulze.jar:." |]
 let () =  Printexc.record_backtrace true
 
 let valid_ballot = List.map string_of_int [0; 1; 1; 0; 0; 1; 0; 0; 0]
