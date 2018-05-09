@@ -2,5 +2,5 @@
 
 (library
  ((name javaocamlbinding)
-  (libraries (ocamljava.camljava ocamljava.javacaml))
+  (libraries (ocamljava.camljava))
   (preprocess (pps (ocamljava.ppx)))))
