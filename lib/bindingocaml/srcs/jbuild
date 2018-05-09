@@ -1,0 +1,6 @@
+(jbuild_version 1)
+
+(library
+ ((name javaocamlbinding)
+  (libraries (ocamljava.camljava ocamljava.javacam))
+  (preprocess (pps (ocamljava.ppx)))))
