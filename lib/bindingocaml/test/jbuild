@@ -4,3 +4,9 @@
  ((name javaocaml)
   (libraries (bindinglib javaocamlbinding))
   (preprocess (pps (ocamljava.ppx)))))
+
+(alias
+ ((name runtest)
+  (action
+   (setenv CLASSPATH "${path:../srcs/ocaml-java/srcs/java/bin/ocaml-java.jar}:${path:../srcs/javacryptocode/schulze.jar}:${path:../srcs/javacryptocode/jarfiles/jna-4.5.0.jar}:${path:../srcs/javacryptocode/jarfiles/jnagmp-2.0.0.jar}:${path:../srcs/javacryptocode/jarfiles/unicrypt-2.3.jar}"
+    (run ${exe:javaocaml.exe})))))
