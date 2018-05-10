@@ -4,7 +4,9 @@
  ((name main)
  (libraries (parsingcode big lib derivation))))
 
+
 (alias
  ((name runtest)
   (action
-   (setenv CLASSPATH "${path:/home/users/u5935541/Mukesh/Code/SchulzeHomomorphicCounting/lib/bindingocaml/srcs/ocaml-java/srcs/java/bin}:${path:/home/users/u5935541/Mukesh/Code/SchulzeHomomorphicCounting/lib/bindingocaml/srcs/javacryptocode}:${path:/home/users/u5935541/Mukesh/Code/SchulzeHomomorphicCounting/lib/bindingocaml/srcs/javacryptocode/jarfiles}"))))
+   (setenv CLASSPATH "${path:lib/bindingocaml/srcs/ocaml-java/srcs/java/bin/ocaml-java.jar}:${path:lib/bindingocaml/srcs/javacryptocode/schulze.jar}:${path:lib/bindingocaml/srcs/javacryptocode/jarfiles/jna-4.5.0.jar}:${path:lib/bindingocaml/srcs/javacryptocode/jarfiles/jnagmp-2.0.0.jar}:${path:lib/bindingocaml/srcs/javacryptocode/jarfiles/unicrypt-2.3.jar}"
+    (run ${exe:main.exe})))))
