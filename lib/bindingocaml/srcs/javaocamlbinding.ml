@@ -1,6 +1,5 @@
-let () = Java.init [| "-Djava.class.path=ocaml-java/srcs/java/bin/ocaml-java.jar:javacryptocode/jarfiles/unicrypt-2.3.jar:javacryptocode/jarfiles/jnagmp-2.0.0.jar:javacryptocode/jarfiles/jna-4.5.0.jar:javacryptocode/schulze.jar:." |]
-let () = Printexc.record_backtrace true
-
+(* let () = Java.init [| "-Djava.class.path=ocaml-java/srcs/java/bin/ocaml-java.jar:javacryptocode/jarfiles/unicrypt-2.3.jar:javacryptocode/jarfiles/jnagmp-2.0.0.jar:javacryptocode/jarfiles/jna-4.5.0.jar:javacryptocode/schulze.jar:." |]
+let () = Printexc.record_backtrace true *)
 
 
 class%java big_integer "java.math.BigInteger" =
